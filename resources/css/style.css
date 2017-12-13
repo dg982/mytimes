@@ -1,4 +1,18 @@
 
-.container {
+.header {
   display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
+
+.logo {
+  color: MediumAquamarine;
+}
+
+.links {
+  display: inline-block;
+  justify-content: flex-end;
+}
+
+.
