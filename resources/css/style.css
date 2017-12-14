@@ -18,15 +18,26 @@ h4 {
   margin: 0 auto;
 }
 
-.column.large {
+.maincontainer {
+  display: flex;
+}
+
+div {
+  border: 1px solid black;
+}
+
+#columnlarge {
+  flex-direction: column;
   width: 630px;
 }
 
-.column.medium {
+#columnmedium {
+  flex-direction: column;
   width: 300px;
 }
 
-.column.small {
+#columnsmall {
+  flex-direction: column;
   width: 240px;
 }
 
