@@ -5,12 +5,14 @@
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
   color: MediumAquamarine;
-  margin-left: 10px;
+}
+
+.logo {
 }
 
 .navigation {
