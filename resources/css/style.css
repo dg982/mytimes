@@ -20,24 +20,26 @@ h4 {
 
 .maincontainer {
   display: flex;
+  flex-direction: column;
+  width: 1000px;
 }
 
 div {
   border: 1px solid black;
 }
 
-#columnlarge {
-  flex-direction: column;
+.column.large {
+  height: 630px;
   width: 630px;
 }
 
-#columnmedium {
-  flex-direction: column;
+.column.medium {
+  height: 300px;
   width: 300px;
 }
 
-#columnsmall {
-  flex-direction: column;
+.column.small {
+  width: 240px;
   width: 240px;
 }
 
