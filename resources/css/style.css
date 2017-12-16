@@ -9,13 +9,12 @@
   width: 1350px;
   height: 75px;
   color: MediumAquamarine;
-  justify-content: space-between;
 }
 
-h4 {
-  display: inline;
-  padding: 30px 10px;
-}
+.mytimes {
+  display: inline-flex;
+  padding: 30px 10px
+  }
 
 .logo {
   padding: 0px 850px 0px 30px;
@@ -30,8 +29,12 @@ h4 {
 
 .maincontainer {
   display: flex;
+  flex-wrap: column wrap;
   width: 1350px;
-  align-content: space-around;
+  align-content: space-between;
+  padding-top: 40px;
+  position: relative;
+  flex-direction: row;
 }
 
 div {
@@ -40,21 +43,27 @@ div {
 
 .column.large {
   flex-direction: column;
-  height: 630px;
+  display: inline-flex;
+  height: 530px;
   width: 630px;
-  margin-right: 50px;
+  margin: 100px;
 }
 
 .column.medium {
   flex-direction: column;
+  display: flex;
   height: 300px;
   width: 300px;
 }
 
 .column.small {
   flex-direction: column;
+  display: flex;
   width: 240px;
   width: 240px;
+}
+
+.feelingfunny {
 }
 
 {
