@@ -4,15 +4,23 @@
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid black;
   margin-bottom: 10px;
+  border: 1px solid black;
+  width: 1350px;
+  height: 75px;
+  color: MediumAquamarine;
+  justify-content: space-between;
 }
 
 h4 {
-  color: MediumAquamarine;
+  display: inline;
+  padding: 30px 10px;
 }
 
 .logo {
+  padding: 0px 850px 0px 30px;
+  border: 1px solid black;
+  display: inline-block;
 }
 
 .navigation {
@@ -22,8 +30,8 @@ h4 {
 
 .maincontainer {
   display: flex;
-  flex-direction: column;
-  width: 1000px;
+  width: 1350px;
+  align-content: space-around;
 }
 
 div {
@@ -31,16 +39,20 @@ div {
 }
 
 .column.large {
+  flex-direction: column;
   height: 630px;
   width: 630px;
+  margin-right: 50px;
 }
 
 .column.medium {
+  flex-direction: column;
   height: 300px;
   width: 300px;
 }
 
 .column.small {
+  flex-direction: column;
   width: 240px;
   width: 240px;
 }
