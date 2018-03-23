@@ -4,48 +4,109 @@ body {
   color: black;
   font-size: 17px;
   font-family: Georgia;
+  max-width: 1000px;
 }
 
-.header {
+a {
+  color: black;
+}
+
+h1 {
+  margin-top: 0;
+	margin-bottom: 0;
+	font-family: Georgia;
+	font-size: 30px
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.multiplestories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.multiplestories .content {
+  height: 250px;
+
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.secondstory {
+  margin-top: 16px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georiga;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+header {
   display: flex;
   align-items: center;
-  font-family: Verdana;
+  position: fixed;
+  z-index: 1;
+  width: 1000px;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  font-family: Georgia;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: 1px solid black;
-  width: 100%;
-  height: 80px;
-  color: MediumAquamarine;
-  z-index: 1;
 }
 
-.mytimes {
-  display: inline-flex;
-  padding: 30px 10px
-  }
-
 .logo {
-  padding: 0px 850px 0px 30px;
-  border: 1px solid black;
+  padding: 30px;
   display: flex;
   align-items: center;
   flex-grow: 1;
+  width: 100%;
 }
 
-.navigation {
-  display: inline-block;
-  margin: 0 auto;
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.logo span {
+  color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 14px;
+}
+
+
+
+#header {
+  padding-right: 40px;
 }
 
 .maincontainer {
   display: flex;
   width: 1232px;
-  padding-top: 40px;
+  padding-top: 116px;
   margin: 0 auto 78px auto;
-}
-
-div {
-  border: 1px solid black;
+  flex-direction: column;
 }
 
 .column {
@@ -58,118 +119,60 @@ div {
   width: 630px;
 }
 
-.column.medium {
-  flex-direction: column;
-  display: flex;
-  height: 300px;
-  width: 300px;
-  padding: 0 15px;
-  margin: 0 32;
-}
-
-.column.small {
-  flex-direction: column;
-  display: flex;
-  width: 240px;
-  width: 240px;
-}
-
 .story1 {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
   width: 630px;
   margin-top: 0;
   font-size: 40px;
   text-align: left;
 }
+.story1 .stories span {
+  margin-left: 20px;
+}
 
-.story2 {
+.fall .stories {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  flex-direction: column;
-
 }
 
-.story3 {
+.camera .stories {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
 }
 
-.story4 {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-#story {
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  color: white;
-}
-
-.secondstory {
-  margin-top: 16px;
-}
-
-p {
-    font-family: Georgia;
-    font-size: 17px;
-    color: black;
-    display: block;
-}
-
-.multiplestories {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 17px;
-}
-
-.story {
-  display: flex;
-  flex-direction: column;
+.column.medium {
   width: 300px;
 }
 
-.content {
-  height: 250px;
+.cat .stories {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
 }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: Georgia;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
+.column.small {
+  width: 240px;
 }
 
-#newsbites {
-  margin: 0;
-  border: 1px 0px solid black;
+.cookie {
+  height: 240px;
+}
+
+.newsbites h2 {
+  Margin-bottom: 41px;
+	Font-size: 16px;
+	Font-weight: bold;
+	Text-align: center;
+}
+
+.newsbites #newsbites {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
   background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  font-weight: normal;
-  padding: 15px;
+}
+
+.newsbites div {
+  padding-left: 11px;
 }
 
 .footer {
@@ -178,12 +181,32 @@ h2 {
   margin: auto;
   font-family: Verdana;
   font-size: 12px;
-  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  text-align: center;
 }
 
-#mytimes {
+.mytimes {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
   font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
   color: white;
+}
+
+.footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 17px;
+    color: black;
+    display: block;
 }
